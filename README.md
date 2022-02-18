@@ -8,7 +8,7 @@
 
 <p float="left">
   <img src="Telegram_logo.svg" width="100" />
-  <img src="logo.png" width="200" /> 
+  <img src="logo.png" width="300" /> 
 </p>
 
 
@@ -23,7 +23,7 @@ Just search Telegram for RideSmart, type `/start`, and share your rides.
 
 1. Create a bot on [Telegram](https://telegram.org/). To do that, download the Telegram app, go to [@BotFather](https://telegram.me/BotFather) and copy your bot API token into `bot4.py`.
 2. Create a free account on [MongoDB](https://www.mongodb.com/) and a database, get the API key and paste it into `bot4.py`. Make sure you white list your DB client's IP address.
-3. Edit the hop-on/hop-off locations in `bot4.py`.
+3. Edit the hop-on/hop-off locations in `bot4.py` for your area.
 4. Run the bot backend `bot4.py`. For the bot to be available at all times, it is best to host the bot on a cloud VM like [PythonAnywhere](https://pythonanywhere.com) or similar.
 
 ## Features
