@@ -32,7 +32,7 @@ Just search Telegram for RideSmart, type `/start`, and share your rides.
 - Hop-on/hop-off locations can be picked from the list or using a pin on Telegram's built-in map.
 
 <p align="center">
-  <img src="assets/tg_screen.png" style="width:20%">
+  <img src="tg_screen.png" style="width:20%">
 </p>
 
 ## Telegram commands
