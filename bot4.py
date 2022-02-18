@@ -57,7 +57,6 @@ print (p, p.is_alive())
 """
 OPEN A DATABASE. IT CAN BE HOSTED EITHER LOCALLY OR REMOTELY.
 """
-
 def start(update, context):
     myclient = pymongo.MongoClient("mongodb+srv://nightman:Computer1@cluster0-dgw53.mongodb.net/test?retryWrites=true&w=majority")
     mydb = myclient["mydatabase"]# create a db in the client
