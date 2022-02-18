@@ -1,4 +1,4 @@
-# Cryptocurrency trading bot for Binance
+# Ride-sharing bot for Moscow
 
 
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
@@ -6,63 +6,47 @@
 ![GitHub](https://img.shields.io/github/license/RomanKoshkin/ema_x_bot)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This is an easy-to-use EMA crossing bot for automatic spot trading on [Binance](www.binance.com).
-
 <p float="left">
   <img src="Telegram_logo.svg" width="100" />
   <img src="logo.png" width="150" /> 
 </p>
 
-## Getting started
 
-1. Get your API keys on Binance and add them to `loadEnv.sh`.
-2. Create a bot on [Telegram](https://telegram.org/). To do that, download the Telegram app, go to [@BotFather](https://telegram.me/BotFather) and copy you bot API token.
-3. Adjust the bot parameters in the `BTCBUSD_7_EMAx.ipynb` as necessary:
-```
-symbol = 'BTCBUSD'
-interval = '1h'
-slow_ema_period = 21*4 # for 4h candles, change for other intervals
-fast_ema_period = 7*4
-max_reconnects = 20
-telegramApiKey = 'your_telegram_bot_api_key'
-```
-4. Run `BTCBUSD_7_EMAx.ipynb`
+## What is it?
+
+This is a ride-sharing bot for Telegram. If you live in Moscow, Russia, you're in luck, because the bot is already operational and you can share your taxi rides (and the money it takes) with other people planning to take a similar trip at more or less the same time.
+
+## If you are in Moscow
+Just search Telegram for RideSmart, type `/start`, and share your rides.
+
+## If you are elsewhere, but want to make ride sharing available in your area
+
+1. Create a bot on [Telegram](https://telegram.org/). To do that, download the Telegram app, go to [@BotFather](https://telegram.me/BotFather) and copy your bot API token into `bot4.py`.
+2. Create a free account on [MongoDB](https://www.mongodb.com/) and a database, get the API key and paste it into `bot4.py`. Make sure you white list your DB client's IP address.
+3. Edit the hop-on/hop-off locations in `bot4.py`.
+4. Run the bot backend `bot4.py`. For the bot to be available at all times, it is best to host the bot on a cloud VM like [PythonAnywhere](https://pythonanywhere.com) or similar.
 
 ## Features
 
-- Hassle-free trading on Binance
-- Performs well in strongly trending markets
-- Opens both long and short positions
-- Conveniently reports trading performance to your Telegram app
-- Reports status, trades, open and closed positions
-- Handles dropped connections
-- Plots positions and profit/loss at exit
-- All the deal info is saved to a dataframe for later analysis
-- Uses sockets to get data
+- Hop-on/hop-off locations include over 280 metro stations, railway stations, airports and major universities (yes, this should be good for students).
+- Hop-on/hop-off locations can be picked from the list or using a pin on Telegram's built-in map.
 
 <p align="center">
   <img src="assets/tg_screen.png" style="width:20%">
 </p>
 
 ## Telegram commands
-- `/pos` - returns a candlestic chart indicating current and past trades and profits
-- `/perf` - return trading performance over time (trading vs. buy-and-hold)
-- `/pos_ha` - same as `/pos` but plots Heikin-Ashi candlesticks
-- `/status` - reports recent stats and internals
-
+- `/start` - starts the bot (only needs to be run once)
 
 ## Dependencies
 
-To install dependencies: 
-`pip install jupyter==1.0.0 matplotlib==3.4.2 mplfinance==0.12.7a17 mpl-finance==0.10.1 numpy==1.20.3 pandas==1.2.4 python-binance==1.0.12 python-telegram-bot==13.6 requests==2.25.1 stockstats==0.3.2 websocket-client==1.2.0 websocket==0.2.1 yfinance==0.1.59 termcolor==1.1.0`
+`pip install pymongo==3.10.1 jupyter==1.0.0 numpy==1.20.3 pandas==1.2.4 python-telegram-bot==13.6 requests==2.25.1 beautifulsoup4==4.7.1`
 
 ## Development
 
 Want to contribute? Great!
 
 ## License
-
-MIT
 
 **Free Software, Hell Yeah!**
 
