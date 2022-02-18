@@ -14,12 +14,14 @@
 
 ## What is it?
 
-This is a ride-sharing bot for Telegram. If you live in Moscow, Russia, you're in luck, because the bot is already operational and you can share your taxi rides  with other people planning to take a similar trip at more or less the same time. If you are a frequent taxi rider, this bot might save you some money.
+This is a ride-sharing bot for Telegram. If you live in Moscow, Russia, you're in luck, because the [bot](https://t.me/RideSmart_bot) is already operational and you can share your taxi rides with other people planning to take a similar trip at more or less the same time. If you are a frequent taxi rider, this [bot](https://t.me/RideSmart_bot) might save you some money.
 
 ## If you are in Moscow
-Just search Telegram for the RideSmart bot (@RideSmart_bot) in your Telegram app, type `/start`, and start sharing your rides.
+Just click this [link](https://t.me/RideSmart_bot) or search in the Telegram app for RideSmart (@RideSmart_bot), type `/start`, and start sharing your rides.
 
 ## If you are elsewhere, but want to make ride sharing available in your area
+
+You'll need to change hop-on/hop-off location in `bot4.py` and host the modified bot on your machine.
 
 1. Create a bot on [Telegram](https://telegram.org/). To do that, download the Telegram app, go to [@BotFather](https://telegram.me/BotFather) and copy your bot API token into `bot4.py`.
 2. Create a free account on [MongoDB](https://www.mongodb.com/) and a database, get the API key and paste it into `bot4.py`. Make sure you white list your DB client's IP address.
