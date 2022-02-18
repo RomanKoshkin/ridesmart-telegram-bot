@@ -14,10 +14,10 @@
 
 ## What is it?
 
-This is a ride-sharing bot for Telegram. If you live in Moscow, Russia, you're in luck, because the bot is already operational and you can share your taxi rides (and the money it takes) with other people planning to take a similar trip at more or less the same time.
+This is a ride-sharing bot for Telegram. If you live in Moscow, Russia, you're in luck, because the bot is already operational and you can share your taxi rides  with other people planning to take a similar trip at more or less the same time. If you are a frequent taxi rider, this bot might save you some money.
 
 ## If you are in Moscow
-Just search Telegram for RideSmart, type `/start`, and share your rides.
+Just search Telegram for the RideSmart bot (@RideSmart_bot) in your Telegram app, type `/start`, and start sharing your rides.
 
 ## If you are elsewhere, but want to make ride sharing available in your area
 
